@@ -1,0 +1,130 @@
+/* RESPONSIVIDADE */
+
+@media(max-width: 900px){
+
+.hero-content{
+flex-direction: column-reverse;
+text-align: center;
+}
+
+.hero-text h1{
+font-size: 2.8rem;
+}
+
+.buttons{
+justify-content: center;
+}
+
+/* HEADER */
+
+.header .container{
+justify-content: space-between;
+}
+
+/* HAMBÚRGUER */
+
+.hamburger{
+display: flex;
+flex-direction: column;
+cursor: pointer;
+gap: 6px;
+}
+
+.hamburger span{
+width: 28px;
+height: 3px;
+background: var(--gray);
+border-radius: 3px;
+transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1){
+transform: rotate(45deg) translate(12px, 12px);
+}
+
+.hamburger.active span:nth-child(2){
+opacity: 0;
+}
+
+.hamburger.active span:nth-child(3){
+transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* MENU MOBILE */
+
+.menu{
+display: none;
+position: absolute;
+top: 80px;
+left: 0;
+width: 100%;
+background: #0d1117;
+padding: 25px 0;
+border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.menu.active{
+display: flex;
+}
+
+.menu ul{
+width: 100%;
+flex-direction: column;
+align-items: center;
+}
+}
+
+
+@media(max-width: 600px){
+
+.hero-text h1{
+    font-size: 2.2rem;
+}
+
+.hero-text h2{
+    font-size: 1.2rem;
+}
+}
+
+/* SOBRE */
+@media(max-width: 900px){
+.sobre-grid{
+    grid-template-columns: 1fr;
+}
+}
+
+/* TECNOLOGIAS */
+
+@media(max-width: 900px){
+.skills-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media(max-width: 500px){
+.skills-grid{
+    grid-template-columns: 1fr;
+}
+}
+
+/* PROJETOS */
+
+@media(max-width: 900px){
+.projetos-grid{
+    grid-template-columns: 1fr;
+}
+}
+
+/* CONTATO */
+
+@media(max-width: 900px){
+.contato-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media(max-width: 500px){
+.contato-grid{
+    grid-template-columns: 1fr;
+}
+}
